@@ -10,4 +10,19 @@ package main;
  */
 public class Item {
     
+    private int id;
+    private String nombre;
+    private int valor;
+
+    public Item(String nombre, int valor) {
+        this.nombre = nombre;
+        this.valor = valor;
+    }
+
+    public String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+    
+    
+    
 }

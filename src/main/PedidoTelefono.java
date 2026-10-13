@@ -4,10 +4,18 @@
  */
 package main;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author juanl
  */
 public class PedidoTelefono {
+    
+    private String telefono;
+    
+    public PedidoTelefono(Cliente cliente, String telefono, ArrayList<Item> itemsTemp) {
+        
+    }
     
 }

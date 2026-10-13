@@ -4,10 +4,23 @@
  */
 package main;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author juanl
  */
 public class Cliente {
+    
+    private String nombre;
+    private ArrayList<Pedido> pedidos;
+
+    Cliente(String nombre) {
+        
+    }
+
+    public String getNombre() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }

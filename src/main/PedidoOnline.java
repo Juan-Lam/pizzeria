@@ -4,10 +4,18 @@
  */
 package main;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author juanl
  */
-public class PedidoOnline {
+public class PedidoOnLine {
+    
+    private String email;
+    
+    public PedidoOnLine(Cliente cliente, String email, ArrayList<Item> itemsTemp) {
+        
+    }
     
 }

@@ -4,10 +4,15 @@
  */
 package main;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author juanl
  */
-public class Pedido {
+public abstract class Pedido {
+    
+    protected Cliente cliente;
+    protected ArrayList<Item> items;
     
 }
