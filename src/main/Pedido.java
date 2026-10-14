@@ -1,18 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
 import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author juanl
- */
 public abstract class Pedido {
-    
     protected Cliente cliente;
-    protected ArrayList<Item> items;
-    
+    protected List<Item> items;
+
+    public Pedido(Cliente cliente, List<Item> items) {
+        this.cliente = cliente;
+        this.items = new ArrayList<>();
+        if (items != null) {
+            this.items.addAll(items);   // copia, para no depender de la lista externa
+        }
+    }
+
+    public Cliente getCliente() { return cliente; }
+    public List<Item> getItems() { return items; }
 }

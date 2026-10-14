@@ -1,28 +1,19 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
-/**
- *
- * @author juanl
- */
 public class Item {
-    
+    private static int contador = 0;   // genera ids automáticos: 0, 1, 2...
+
     private int id;
     private String nombre;
     private int valor;
 
     public Item(String nombre, int valor) {
+        this.id = contador++;
         this.nombre = nombre;
         this.valor = valor;
     }
 
-    public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-    
-    
-    
+    public int getId() { return id; }
+    public String getNombre() { return nombre; }
+    public int getValor() { return valor; }
 }

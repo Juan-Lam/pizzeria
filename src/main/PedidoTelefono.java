@@ -1,21 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
-import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author juanl
- */
-public class PedidoTelefono {
-    
+public class PedidoTelefono extends Pedido {
     private String telefono;
-    
-    public PedidoTelefono(Cliente cliente, String telefono, ArrayList<Item> itemsTemp) {
-        
+
+    public PedidoTelefono(Cliente cliente, String telefono, List<Item> items) {
+        super(cliente, items);
+        this.telefono = telefono;
     }
-    
+
+    public String getTelefono() { return telefono; }
 }

@@ -1,26 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
 import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author juanl
- */
 public class Cliente {
-    
     private String nombre;
-    private ArrayList<Pedido> pedidos;
+    private List<Pedido> pedidos;
 
-    Cliente(String nombre) {
-        
+    public Cliente(String nombre) {
+        this.nombre = nombre;
+        this.pedidos = new ArrayList<>();
     }
 
-    public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public boolean addPedido(Pedido pedido) {
+        if (pedido == null || pedidos.contains(pedido)) {
+            return false;
+        }
+        return pedidos.add(pedido);
     }
-    
+
+    public String getNombre() { return nombre; }
+    public List<Pedido> getPedidos() { return pedidos; }
 }

@@ -1,21 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package main;
 
-import java.util.ArrayList;
+import java.util.List;
 
-/**
- *
- * @author juanl
- */
-public class PedidoOnLine {
-    
+public class PedidoOnLine extends Pedido {
     private String email;
-    
-    public PedidoOnLine(Cliente cliente, String email, ArrayList<Item> itemsTemp) {
-        
+
+    public PedidoOnLine(Cliente cliente, String email, List<Item> items) {
+        super(cliente, items);
+        this.email = email;
     }
-    
+
+    public String getEmail() { return email; }
 }
